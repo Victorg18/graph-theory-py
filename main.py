@@ -12,16 +12,9 @@ with open("weighted_graph.json", "r") as f:
     weighted_graph = json.load(f)
 
 def main():
-    # Run Dijkstra on weighted graph
-    distances = dijkstra(weighted_graph, "A")
-    sorted_distances = sorted(distances.items(), key=lambda x: x[1])
-    print("Shortest distances from A (sorted):")
-    for node, dist in sorted_distances:
-        print(f"{node}: {dist}")
-
     # Visualize any graph
-    print("\nVisualizing weighted graph...")
-    visualize_graph(weighted_graph)
+    print("\nVisualizing a graph graph...")
+    visualize_graph(graph)
 
 if __name__ == "__main__":
     main()
